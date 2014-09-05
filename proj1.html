@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Project 1</title>
+   </head>
+  <body>
+    <h1>Project 1</h1>
+
+    <h2>Goal</h2>
+    <p>
+    The goal of the first project is to familiarize you with sockets
+    programming in C. You will create a client that sends a string
+    to a server, and a server that responds with a value. After you get
+    this basic operation working, you will enhance the client and server so 
+    that two message types are supported. 
+    </p>
+
+    <h2>Description</h2>
+    <p>
+    <b>Due:</b> Tuesday, February 4th, 11:55am EST<br>
+    <b>Points:</b> 100 
+    </p>
+
+    <p>
+    You are to develop a networked application that takes a text string specifying
+    the name of a bank account on the client side, transmits that string to the server, 
+    and then receives a return value from the server that is the account balance (in integer
+    dollars) for the named account. You should support four named accounts: mySavings, myChecking,
+    myRetirement and myCollege. You should pre-configure your server with balances for each. 
+    Make them all different (and positive integers!).
+    Both client and server must use TCP to exchange messages. The client must take 
+    the account name as a command line argument as well as the server IP address and port 
+    number. Be sure to include error checking in case any of these arguments are missing or
+    incorrectly formatted. 
+    </p>
+
+    <p> 
+    After getting this working, you are to
+    develop a more complex version that supports two message types, one
+    called BAL used as in the first part to ask the server for the balance on
+    a named account, and the other called COUNT used to ask the server for the count 
+    of the number of times the balance has been requested for a named account. This
+    functionality might be used, for example, to detect an unusual level of activity
+    on a particular account. Your client and server will need to be modified to allow
+    two message types. Your client should take two command line arguments in addition to
+    the server IP address and port number: one that specifies
+    the type of request (BAL or COUNT) and the other that gives the named account. Your
+    server will need to track the number of BAL requests to each account in order to 
+    respond accurately to COUNT requests. 
+    </p>
+
+    <p>
+    To get you started, I have provided you with a code framework. These
+    files include <a href="client.c">client.c</a>,
+    <a href="server.c">server.c</a> and a 
+    <a href="Makefile">Makefile</a> to get things compiled. Note
+    that this work <i>must</i> be done on a Linux/UNIX machine. 
+    
+    <p>
+    The first part of the project (simple request/response) should not be difficult. 
+    The second will be slightly more difficult. Do not wait until the last minute to
+    work on it. 
+    </p>
+
+    <p>
+    Note that students should use the "Shuttle" servers here at the College
+    of Computing. More information can be found 
+    <a href="https://support.cc.gatech.edu/facilities/general-access-servers">
+    here</a>.
+    </p>
+
+    <h2>Submission Instructions</h2>
+    <p>
+    Students are to turn in all their files as a single tarfile, submitted
+    directly to T-Square. The tarfile should be your named as follows: 
+    your_last_name-proj1.tar.gz. To make a tarfile, I would do the following
+    on the command line: 
+    </p>
+
+    <p>
+    <b>tar zcvf zegura-proj1.tar.gz client.c server.c Makefile 
+	zegura-output.txt</b>
+    </p>
+
+    <p>
+    As shown above, students must also turn in a file containing sample
+    output from their program (last_name-output.txt). Specifically, students
+    must enter a sequence of BAL requests to different accounts and with 
+    at least two COUNT requests interspersed, and show the results returned
+    by the server.  
+    </p>
+
+    <p>
+    Remember that the Academic Integrity policies outlined both in the 
+    Student Handbook, the course syllabus and the first lecture are in
+    effect. This is an individual assignment. <font color=red> Students 
+    detected cheating or collaborating will immediately be referred to the
+    Office of Student Integrity.</font>
+    </p>
+
+    <p>
+    Credit: this assignment is adapted from Professor Traynor.
+    </p>
+
+  </body>
+</html>
+

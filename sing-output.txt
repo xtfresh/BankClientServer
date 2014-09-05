@@ -1,0 +1,10 @@
+manisingh@crunchbang:~/Dropbox/CS/CS 3251/Project 1$ ./nameChanger BAL mySavings 127.0.0.1 5000
+mySavings
+Balance is: 200
+manisingh@crunchbang:~/Dropbox/CS/CS 3251/Project 1$ ./nameChanger BAL mySavings 127.0.0.1 5000
+mySavings
+Balance is: 200
+manisingh@crunchbang:~/Dropbox/CS/CS 3251/Project 1$ ./nameChanger CNT mySavings 127.0.0.1 5000
+mySavings
+Total Count is: 2
+manisingh@crunchbang:~/Dropbox/CS/CS 3251/Project 1$ 
